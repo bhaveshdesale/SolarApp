@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore The Solar System">
+    <title>Planets</title>
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css-files/libraries/icomoon.css">
+    <link rel="stylesheet" href="css-files/libraries/customize.css">
+    <link rel="stylesheet" href="css-files/style.css">
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #threejs-canvas { width: 100%; height: 100vh; }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="max-width">
+            <div class="logo"><a href=""><img src="media/favicon.ico" alt="Logo"></a><a href="">Solar System</a></div>
+            <div class="links"><label for="checkbox"><i class="bars"></i></label>
+                <input type="checkbox" id="checkbox">
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#sun">Sun</a></li>
+                    <li><a href="#mercury">Mercury</a></li>
+                    <li><a href="#venus">Venus</a></li>
+                    <li><a href="#earth">Earth</a></li>
+                    <li><a href="#mars">Mars</a></li>
+                    <li><a href="#jupiter">Jupiter</a></li>
+                    <li><a href="#saturn">Saturn</a></li>
+                    <li><a href="#uranus">Uranus</a></li>
+                    <li><a href="#neptune">Neptune</a></li>
+                    <li><a href="#pluto">Pluto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="landing">
+        <video src="media/videos/landing.mp4" type="video/mp4" autoplay muted loop></video>
+        <div class="overlay"></div>
+        <div class="max-width">
+            <div class="text">
+                <h2>Hello There</h2>
+                <h1>Are you ready to explore the solar system?</h1>
+                <p>Choose the sun or any of the nine planets to find out information about it</p>
+                <a href="#sun"><i class="angle-double-down"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Solar System Model Section -->
+    <section id="solar-system-3d">
+        <div id="threejs-canvas"></div>
+
+      </section>
+      <div class="button-container">
+        <button class="model-button" type="button" onclick="window.location.href='sample.html'">Explore 3D Model</button>
+    </div>
+    
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        .model-button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 15px 30px; /* Padding for the button */
+            font-size: 16px; /* Button font size */
+            font-weight: bold; /* Bold text */
+            border: none; /* Remove border */
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+        }
+    
+        .model-button:hover {
+            background-color: hsl(247, 90%, 16%); /* Darker green on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+        }
+    
+        .model-button:active {
+            background-color: #08021c; /* Even darker on click */
+            transform: translateY(0); /* No lift on click */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+        }
+    </style>
+    
+    <!-- Solar System Information Sections -->
+    <section class="sun" id="sun">
+        <div class="max-width">
+            <div class="sun"></div>
+            <div class="information">
+                <h1>The Sun</h1>
+                <p>The Sun (its symbol ☉) is the central star of the Solar System. It is nearly spherical and contains a hot plasma interlaced with a magnetic field...</p>
+                <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mercury" id="mercury">
+        <div class="max-width">
+            <div class="mercury planet"></div>
+            <div class="information">
+                <h1>Mercury</h1>
+                <p>Mercury (its symbol ☿) is the smallest planet in the solar system and closest to the sun...</p>
+                <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="venus" id="venus">
+        <div class="max-width">
+            <div class="venus planet"></div>
+            <div class="information">
+                <h1>Venus</h1>
+                <p>Venus (its symbol ♀) is the second planet in the solar system in terms of its distance from the sun...</p>
+                <a href="https://en.wikipedia.org/wiki/Venus" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="earth" id="earth">
+        <div class="max-width">
+            <div class="earth planet">
+                <div class="moon moo"><span>moon</span></div>
+            </div>
+            <div class="information">
+                <h1>Earth</h1>
+                <p>Earth (its symbol ♁) is the third planet in the solar system after Mercury and Venus...</p>
+                <a href="https://en.wikipedia.org/wiki/Earth" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mars" id="mars">
+        <div class="max-width">
+            <div class="mars planet">
+                <div class="deimos moo"><span>Deimos</span></div>
+                <div class="phoebos moo"><span>Phoebos</span></div>
+            </div>
+            <div class="information">
+                <h1>Mars</h1>
+                <p>Mars (its symbol ♂) is the fourth planet from the Sun and the second smallest planet in the Solar System...</p>
+                <a href="https://en.wikipedia.org/wiki/Mars" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="meteors"><span>Asteroid belt</span></div>
+
+    <section class="jupiter" id="jupiter">
+        <div class="max-width">
+            <div class="jupiter planet">
+                <div class="io moo moon1"><span>IO</span></div>
+                <div class="europa moo moon2"><span>Europa</span></div>
+                <div class="ganymede moo moon3"><span>Ganymede</span></div>
+            </div>
+            <div class="information">
+                <h1>Jupiter</h1>
+                <p>Jupiter (its symbol ♃) is the fifth planet from the Sun and the largest in the Solar System...</p>
+                <a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="saturn" id="saturn">
+        <div class="max-width">
+            <div class="saturn planet">
+                <div class="dione moo moon1"><span>Dione</span></div>
+                <div class="titan moo moon2"><span>Titan</span></div>
+                <div class="enceladus moo moon3"><span>Enceladus</span></div>
+            </div>
+            <div class="information">
+                <h1>Saturn</h1>
+                <p>Saturn (its symbol ♄) is the sixth planet from the Sun and the second-largest in the Solar System...</p>
+                <a href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="uranus" id="uranus">
+        <div class="max-width">
+            <div class="uranus planet">
+                <div class="miranda moo moon1"><span>Miranda</span></div>
+                <div class="umbriel moo moon2"><span>Umbriel</span></div>
+                <div class="ariel moo moon3"><span>Ariel</span></div>
+            </div>
+            <div class="information">
+                <h1>Uranus</h1>
+                <p>Uranus (its symbol ⛢) is the seventh planet from the Sun...</p>
+                <a href="https://en.wikipedia.org/wiki/Uranus" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="neptune" id="neptune">
+        <div class="max-width">
+            <div class="neptune planet">
+                <div class="triton moo moon1"><span>Triton</span></div>
+                <div class="proteus moo moon2"><span>Proteus</span></div>
+                <div class="nereid moo moon3"><span>Nereid</span></div>
+            </div>
+            <div class="information">
+                <h1>Neptune</h1>
+                <p>Neptune (its symbol ♆) is the eighth and farthest planet from the Sun...</p>
+                <a href="https://en.wikipedia.org/wiki/Neptune" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pluto" id="pluto">
+        <div class="max-width">
+            <div class="pluto planet"></div>
+            <div class="information">
+                <h1>Pluto</h1>
+                <p>Pluto (its symbol ♇) is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune...</p>
+                <a href="https://en.wikipedia.org/wiki/Pluto" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('threejs-canvas').appendChild(renderer.domElement);
+
+        // Create the Sun
+        const sunGeometry = new THREE.SphereGeometry(1, 32, 32);
+        const sunMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+        const sun = new THREE.Mesh(sunGeometry, sunMaterial);
+        scene.add(sun);
+
+        // Create planets
+        const planetsData = [
+            { color: 0xaaaaaa, distance: 2, size: 0.1 }, // Mercury
+            { color: 0xffcc00, distance: 3, size: 0.2 }, // Venus
+            { color: 0x0077cc, distance: 4, size: 0.2 }, // Earth
+            { color: 0xff0000, distance: 5, size: 0.1 }, // Mars
+            { color: 0xcc9933, distance: 6, size: 0.5 }, // Jupiter
+            { color: 0xffcc66, distance: 7, size: 0.4 }, // Saturn
+            { color: 0x66ccff, distance: 8, size: 0.3 }, // Uranus
+            { color: 0x0000ff, distance: 9, size: 0.3 }, // Neptune
+        ];
+
+        const planets = [];
+        for (let data of planetsData) {
+            const planetGeometry = new THREE.SphereGeometry(data.size, 32, 32);
+            const planetMaterial = new THREE.MeshBasicMaterial({ color: data.color });
+            const planet = new THREE.Mesh(planetGeometry, planetMaterial);
+            planet.position.x = data.distance;
+            scene.add(planet);
+            planets.push(planet);
+        }
+
+        camera.position.z = 10;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            sun.rotation.y += 0.01; // Rotate the sun
+            planets.forEach((planet, index) => {
+                planet.rotation.y += 0.01; // Rotate the planets
+                planet.position.x = Math.cos(Date.now() * 0.001 + index) * planetsData[index].distance;
+                planet.position.z = Math.sin(Date.now() * 0.001 + index) * planetsData[index].distance;
+            });
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', function () {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+
+</html>

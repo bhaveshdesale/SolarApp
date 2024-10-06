@@ -1,0 +1,78 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="Explore The Universe")
+    title Universe Explorer
+    link(rel="shortcut icon", href="assets/images/universe_icon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="assets/css/main.css")
+    link(rel="stylesheet", href="assets/css/icons.css")
+  body
+    //- Navbar Section
+    header
+      .container
+        .logo-section
+          a(href="index.html") #[img(src="assets/images/universe_icon.ico", alt="Site Logo")]
+          a(href="index.html") Universe Explorer
+        .nav-links
+          label(for="toggle-menu") #[i(class="menu-bars")]
+          input(type="checkbox", id="toggle-menu")
+          nav
+            ul
+              li #[a(href="#home") Home]
+              li #[a(href="#stars") Stars]
+              li #[a(href="#planets") Planets]
+              li #[a(href="#galaxies") Galaxies]
+              li #[a(href="#about") About Us]
+    //- Hero Section
+    section.hero
+      video(src="assets/videos/space.mp4" autoplay muted loop type="video/mp4")
+      .overlay
+      .content-wrapper
+        .intro-text
+          h2 Welcome to the Universe
+          h1 Discover The Secrets of Space
+          p Journey through the stars and explore the cosmos.
+          a(href="#stars") #[i(class="scroll-down-arrow")]
+    //- Stars Section
+    section.stars(id="stars")
+      .container
+        div(class="star-details")
+        .info-text
+          h1 The Stars
+          p Stars are luminous balls of gas, mostly hydrogen and helium, undergoing nuclear fusion.
+          p They vary greatly in size, age, and temperature, influencing their brightness and color.
+          a(href="https://en.wikipedia.org/wiki/Star", target="_blank") Learn More
+    //- Planets Section
+    section.planets(id="planets")
+      .container
+        div(class="planet-info")
+        .info-text
+          h1 Planets
+          p Planets orbit stars and do not emit their own light. They come in various forms like gas giants and rocky planets.
+          a(href="https://en.wikipedia.org/wiki/Planet", target="_blank") Learn More
+    //- Galaxies Section
+    section.galaxies(id="galaxies")
+      .container
+        div(class="galaxy-info")
+        .info-text
+          h1 Galaxies
+          p Galaxies are vast collections of stars, dust, and dark matter, bound together by gravity.
+          a(href="https://en.wikipedia.org/wiki/Galaxy", target="_blank") Learn More
+    //- About Section
+    section.about(id="about")
+      .container
+        .team-info
+          h1 About Us
+          p We are a team of space enthusiasts dedicated to educating others about the wonders of the universe.
+          a(href="#contact") Contact Us
+    //- Footer Section
+    footer
+      .container
+        .footer-left
+          span Created by #[a(href="https://github.com/yourname", target="_blank") Your Name] &copy; 2024 All rights reserved.
+        .footer-right
+          a(href="https://www.facebook.com/yourname/", target="_blank") #[i(class="facebook")]
+          a(href="https://github.com/yourname", target="_blank") #[i(class="github")]
